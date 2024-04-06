@@ -1,0 +1,245 @@
+﻿[
+  {
+    "StatusCode": -9,
+    "Status": "Error",
+    "Type": "public",
+    "Messages": {
+      "Persion": "خطای اعتبار سنجی1- مرچنت کد داخل تنظیمات وارد نشده باشد-2 آدرس بازگشت (callbackurl) وارد نشده باشد -3 توضیحات (description ) وارد نشده باشد و یا از حد مجاز 500 کارکتر بیشتر باشد -4 مبلغ پرداختی کمتر یا بیشتر از حد مجاز",
+      "English": "Validation error"
+    }
+  },
+  {
+    "StatusCode": -10,
+    "Status": "Error",
+    "Type": "public",
+    "Messages": {
+      "Persion": "ای پی یا مرچنت كد پذیرنده صحیح نیست.",
+      "English": "Terminal is not valid, please check merchant_id or ip address."
+    }
+  },
+  {
+    "StatusCode": -11,
+    "Status": "Error",
+    "Type": "public",
+    "Messages": {
+      "Persion": "مرچنت کد فعال نیست، پذیرنده مشکل خود را به امور مشتریان زرین‌پال ارجاع دهد.",
+      "English": "Terminal is not active, please contact our support team."
+    }
+  },
+  {
+    "StatusCode": -12,
+    "Status": "Error",
+    "Type": "public",
+    "Messages": {
+      "Persion": "تلاش بیش از دفعات مجاز در یک بازه زمانی کوتاه به امور مشتریان زرین پال اطلاع دهید",
+      "English": "To many attempts, please try again later."
+    }
+  },
+  {
+    "StatusCode": -15,
+    "Status": "Error",
+    "Type": "public",
+    "Messages": {
+      "Persion": "درگاه پرداخت به حالت تعلیق در آمده است، پذیرنده مشکل خود را به امور مشتریان زرین‌پال ارجاع دهد.",
+      "English": "Terminal user is suspend : (please contact our support team)."
+    }
+  },
+  {
+    "StatusCode": -16,
+    "Status": "Error",
+    "Type": "public",
+    "Messages": {
+      "Persion": "سطح تایید پذیرنده پایین تر از سطح نقره ای است.",
+      "English": "Terminal user level is not valid : ( please contact our support team)."
+    }
+  },
+  {
+    "StatusCode": -17,
+    "Status": "Error",
+    "Type": "public",
+    "Messages": {
+      "Persion": "محدودیت پذیرنده در سطح آبی",
+      "English": "Terminal user level is not valid : ( please contact our support team)."
+    }
+  },
+  {
+    "StatusCode": 100,
+    "Status": "Success",
+    "Type": "public",
+    "Messages": {
+      "Persion": "عملیات موفق",
+      "English": "Success"
+    }
+  },
+  {
+    "StatusCode": -30,
+    "Status": "Error",
+    "Type": "PaymentRequest",
+    "Messages": {
+      "Persion": "پذیرنده اجازه دسترسی به سرویس تسویه اشتراکی شناور را ندارد.",
+      "English": "Terminal do not allow to accept floating wages."
+    }
+  },
+  {
+    "StatusCode": -31,
+    "Status": "Error",
+    "Type": "PaymentRequest",
+    "Messages": {
+      "Persion": "حساب بانکی تسویه را به پنل اضافه کنید. مقادیر وارد شده برای تسهیم درست نیست. پذیرنده جهت استفاده از خدمات سرویس تسویه اشتراکی شناور، باید حساب بانکی معتبری به پنل کاربری خود اضافه نماید.",
+      "English": "Terminal do not allow to accept wages, please add default bank account in panel."
+    }
+  },
+  {
+    "StatusCode": -32,
+    "Status": "Error",
+    "Type": "PaymentRequest",
+    "Messages": {
+      "Persion": "مبلغ وارد شده از مبلغ کل تراکنش بیشتر است.",
+      "English": "Wages is not valid, Total wages(floating) has been overload max amount."
+    }
+  },
+  {
+    "StatusCode": -33,
+    "Status": "Error",
+    "Type": "PaymentRequest",
+    "Messages": {
+      "Persion": "درصدهای وارد شده صحیح نیست.",
+      "English": "Wages floating is not valid."
+    }
+  },
+  {
+    "StatusCode": -34,
+    "Status": "Error",
+    "Type": "PaymentRequest",
+    "Messages": {
+      "Persion": "مبلغ وارد شده از مبلغ کل تراکنش بیشتر است.",
+      "English": "Wages is not valid, Total wages(fixed) has been overload max amount."
+    }
+  },
+  {
+    "StatusCode": -35,
+    "Status": "Error",
+    "Type": "PaymentRequest",
+    "Messages": {
+      "Persion": "تعداد افراد دریافت کننده تسهیم بیش از حد مجاز است.",
+      "English": "Wages is not valid, Total wages(floating) has been reached the limit in max parts."
+    }
+  },
+  {
+    "StatusCode": -36,
+    "Status": "Error",
+    "Type": "PaymentRequest",
+    "Messages": {
+      "Persion": "حداقل مبلغ جهت تسهیم باید ۱۰۰۰۰ ریال باشد",
+      "English": "The minimum amount for wages(floating) should be 10,000 Rials"
+    }
+  },
+  {
+    "StatusCode": -37,
+    "Status": "Error",
+    "Type": "PaymentRequest",
+    "Messages": {
+      "Persion": "یک یا چند شماره شبای وارد شده برای تسهیم از سمت بانک غیر فعال است.",
+      "English": "One or more iban entered for wages(floating) from the bank side are inactive."
+    }
+  },
+  {
+    "StatusCode": -38,
+    "Status": "Error",
+    "Type": "PaymentRequest",
+    "Messages": {
+      "Persion": "خطا٬عدم تعریف صحیح شبا٬لطفا دقایقی دیگر تلاش کنید.",
+      "English": "Wages need to set Iban in shaparak."
+    }
+  },
+  {
+    "StatusCode": -39,
+    "Status": "Error",
+    "Type": "PaymentRequest",
+    "Messages": {
+      "Persion": "خطایی رخ داده است به امور مشتریان زرین پال اطلاع دهید",
+      "English": "Wages have a error!"
+    }
+  },
+  {
+    "StatusCode": -40,
+    "Status": "Error",
+    "Type": "PaymentRequest",
+    "Messages": {
+      "Persion": "",
+      "English": "Invalid extra params, expire_in is not valid."
+    }
+  },
+  {
+    "StatusCode": -41,
+    "Status": "Error",
+    "Type": "PaymentRequest",
+    "Messages": {
+      "Persion": "حداکثر مبلغ پرداختی ۱۰۰ میلیون تومان است",
+      "English": "Maximum amount is 100,000,000 tomans."
+    }
+  },
+  {
+    "StatusCode": -50,
+    "Status": "Error",
+    "Type": "PaymentVerify",
+    "Messages": {
+      "Persion": "مبلغ پرداخت شده با مقدار مبلغ ارسالی در متد وریفای متفاوت است.",
+      "English": "Session is not valid, amounts values is not the same."
+    }
+  },
+  {
+    "StatusCode": -51,
+    "Status": "Error",
+    "Type": "PaymentVerify",
+    "Messages": {
+      "Persion": "پرداخت ناموفق",
+      "English": "Session is not valid, session is not active paid try."
+    }
+  },
+  {
+    "StatusCode": -52,
+    "Status": "Error",
+    "Type": "PaymentVerify",
+    "Messages": {
+      "Persion": "خطای غیر منتظره‌ای رخ داده است. پذیرنده مشکل خود را به امور مشتریان زرین‌پال ارجاع دهد.",
+      "English": "Oops!!, please contact our support team"
+    }
+  },
+  {
+    "StatusCode": -53,
+    "Status": "Error",
+    "Type": "PaymentVerify",
+    "Messages": {
+      "Persion": "پرداخت متعلق به این مرچنت کد نیست.",
+      "English": "Session is not this merchant_id session"
+    }
+  },
+  {
+    "StatusCode": -54,
+    "Status": "Error",
+    "Type": "PaymentVerify",
+    "Messages": {
+      "Persion": "اتوریتی نامعتبر است.",
+      "English": "Invalid authority."
+    }
+  },
+  {
+    "StatusCode": -55,
+    "Status": "Error",
+    "Type": "PaymentVerify",
+    "Messages": {
+      "Persion": "تراکنش مورد نظر یافت نشد",
+      "English": "manual payment request not found."
+    }
+  },
+  {
+    "StatusCode": 101,
+    "Status": "Success",
+    "Type": "PaymentVerify",
+    "Messages": {
+      "Persion": "تراکنش وریفای شده است.",
+      "English": "Verified"
+    }
+  }
+]

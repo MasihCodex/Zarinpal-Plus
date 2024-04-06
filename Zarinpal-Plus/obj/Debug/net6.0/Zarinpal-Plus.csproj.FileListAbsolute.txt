@@ -1,0 +1,12 @@
+C:\Users\MasihCodex\source\repos\Zarinpal-Plus\Zarinpal-Plus\bin\Debug\net6.0\Zarinpal-Plus.deps.json
+C:\Users\MasihCodex\source\repos\Zarinpal-Plus\Zarinpal-Plus\bin\Debug\net6.0\Zarinpal-Plus.dll
+C:\Users\MasihCodex\source\repos\Zarinpal-Plus\Zarinpal-Plus\bin\Debug\net6.0\Zarinpal-Plus.pdb
+C:\Users\MasihCodex\source\repos\Zarinpal-Plus\Zarinpal-Plus\obj\Debug\net6.0\Zarinpal-Plus.csproj.AssemblyReference.cache
+C:\Users\MasihCodex\source\repos\Zarinpal-Plus\Zarinpal-Plus\obj\Debug\net6.0\Zarinpal-Plus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MasihCodex\source\repos\Zarinpal-Plus\Zarinpal-Plus\obj\Debug\net6.0\Zarinpal-Plus.AssemblyInfoInputs.cache
+C:\Users\MasihCodex\source\repos\Zarinpal-Plus\Zarinpal-Plus\obj\Debug\net6.0\Zarinpal-Plus.AssemblyInfo.cs
+C:\Users\MasihCodex\source\repos\Zarinpal-Plus\Zarinpal-Plus\obj\Debug\net6.0\Zarinpal-Plus.csproj.CoreCompileInputs.cache
+C:\Users\MasihCodex\source\repos\Zarinpal-Plus\Zarinpal-Plus\obj\Debug\net6.0\Zarinpal-Plus.dll
+C:\Users\MasihCodex\source\repos\Zarinpal-Plus\Zarinpal-Plus\obj\Debug\net6.0\refint\Zarinpal-Plus.dll
+C:\Users\MasihCodex\source\repos\Zarinpal-Plus\Zarinpal-Plus\obj\Debug\net6.0\Zarinpal-Plus.pdb
+C:\Users\MasihCodex\source\repos\Zarinpal-Plus\Zarinpal-Plus\obj\Debug\net6.0\ref\Zarinpal-Plus.dll
