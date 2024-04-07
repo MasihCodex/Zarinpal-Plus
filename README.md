@@ -46,7 +46,7 @@ var VResponse = ZRequest.VerifyAsync(new Zarinpal_Plus.Models.VerifyRequestModel
 ## توضیحات تکمیلی
 
 ### مدل ها
-  > در تابع ساخت درگاه (RequestAsync) **درخواست**
+  > در تابع ساخت درگاه (RequestAsync) $${\color{lightgreen}Request}$$
 
 ```
     public class RequestModel
@@ -75,7 +75,7 @@ var VResponse = ZRequest.VerifyAsync(new Zarinpal_Plus.Models.VerifyRequestModel
         IRR, IRT
     }
 ```
- > در تابع ساخت درگاه (RequestAsync) **جواب**
+ > در تابع ساخت درگاه (RequestAsync) $${\color{lightgreen}Response}$$
 
 ```
     public class ResponseModel
@@ -94,7 +94,7 @@ var VResponse = ZRequest.VerifyAsync(new Zarinpal_Plus.Models.VerifyRequestModel
         public string? FeeType { get; set; }
     }
 ```
-   > در تابع برسی درخواست درگاه (VerifyAsync) **درخواست**
+   > در تابع برسی درخواست درگاه (VerifyAsync) $${\color{lightblue}Request}$$
 ```
     public class VerifyRequestModel
     {
@@ -106,7 +106,8 @@ var VResponse = ZRequest.VerifyAsync(new Zarinpal_Plus.Models.VerifyRequestModel
     }
 ```
   
-  > در تابع برسی درخواست درگاه (VerifyAsync) $${\color{lightgreen}جواب \space Green}$$
+  > در تابع برسی درخواست درگاه (VerifyAsync) $${\color{lightblue}Response}$$
+
 
 ```
     public class VerifyResponseModel
