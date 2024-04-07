@@ -106,7 +106,7 @@ var VResponse = ZRequest.VerifyAsync(new Zarinpal_Plus.Models.VerifyRequestModel
     }
 ```
   
-  > در تابع برسی درخواست درگاه (VerifyAsync) <span style="color: green;"> Some green text </span>
+  > در تابع برسی درخواست درگاه (VerifyAsync) $${\color{lightgreen}جواب \space Green}$$
 
 ```
     public class VerifyResponseModel
