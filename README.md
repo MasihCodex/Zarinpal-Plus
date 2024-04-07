@@ -45,8 +45,38 @@ var VResponse = ZRequest.VerifyAsync(new Zarinpal_Plus.Models.VerifyRequestModel
 
 ## توضیحات تکمیلی
 
-### مدل برگشتی
-  > در تابع ساخت درگاه (RequestAsync)
+### مدل ها
+  > در تابع ساخت درگاه (RequestAsync) **درخواست**
+
+```
+    public class RequestModel
+    {
+        public UnitType? UnitType { get; set; }
+
+        public Guid MerchantId { get; set; }
+
+        public int Amount { get; set; }
+
+        public String CallBackUrl { get; set; } = null!;
+        public String Description { get; set; } = null!;
+
+        public RequestMetaDataModel? MetaData { get; set; }
+    }
+
+    public class RequestMetaDataModel
+    {
+        public String? Email { get; set; }
+        public String? Mobile { get; set; }
+        public String? OrderId { get; set; }
+    }
+
+    public enum UnitType
+    {
+        IRR, IRT
+    }
+```
+ > در تابع ساخت درگاه (RequestAsync) **جواب**
+
 ```
     public class ResponseModel
     {
@@ -64,7 +94,20 @@ var VResponse = ZRequest.VerifyAsync(new Zarinpal_Plus.Models.VerifyRequestModel
         public string? FeeType { get; set; }
     }
 ```
-  > در تابع برسی درخواست درگاه (VerifyAsync)
+   > در تابع برسی درخواست درگاه (VerifyAsync) **درخواست**
+```
+    public class VerifyRequestModel
+    {
+        public Guid MerchantId { get; set; }
+
+        public int Amount { get; set; }
+
+        public string Authority { get; set; } = null!;
+    }
+```
+  
+  > در تابع برسی درخواست درگاه (VerifyAsync) <span style="color: green;"> Some green text </span>
+
 ```
     public class VerifyResponseModel
     {
@@ -86,6 +129,24 @@ var VResponse = ZRequest.VerifyAsync(new Zarinpal_Plus.Models.VerifyRequestModel
         public string FeeType { get; set; }
     }
 ```
+  > مدل (StatusModel)
+```
+    public class StatusModel
+    {
+        public int StatusCode { get; set; }
+
+        public string Status { get; set; }
+        public string Type { get; set; }
+
+        public StatusMessageModel Messages { get; set; }
+    }
+    public class StatusMessageModel
+    {
+        public string Persion { get; set; }
+        public string English { get; set; }
+    }
+```
+
 ### جدول وضعیت
 
 | نوع | وضعیت | کد وضعیت | پیام فارسی |
