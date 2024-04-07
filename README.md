@@ -45,7 +45,49 @@ var VResponse = ZRequest.VerifyAsync(new Zarinpal_Plus.Models.VerifyRequestModel
 
 ## توضیحات تکمیلی
 
-  ### جدول وضعیت
+### مدل برگشتی
+  > در تابع ساخت درگاه (RequestAsync)
+```
+    public class ResponseModel
+    {
+        public DataModel? Data { get; set; }
+
+        public object? Errors { get; set; }
+
+        public StatusModel? Status { get; set; }
+    }
+    public class DataModel
+    {
+        public int Fee { get; set; }
+
+        public string? Authority { get; set; }
+        public string? FeeType { get; set; }
+    }
+```
+  > در تابع برسی درخواست درگاه (VerifyAsync)
+```
+    public class VerifyResponseModel
+    {
+        public VerifyDataModel? Data { get; set; }
+
+        public object? Errors { get; set; }
+
+        public StatusModel? Status { get; set; }
+    }
+
+    public class VerifyDataModel
+    {
+        public int Code { get; set; }
+        public int RefrenceId { get; set; }
+        public int Fee { get; set; }
+
+        public string CardHash { get; set; }
+        public string CardPan { get; set; }
+        public string FeeType { get; set; }
+    }
+```
+### جدول وضعیت
+
 | نوع | وضعیت | کد وضعیت | پیام فارسی |
 | :---: | :---: | :---: | ---: |
 | public | Error | -9 | خطای اعتبار سنجی1- مرچنت کد داخل تنظیمات وارد نشده باشد-2 آدرس بازگشت (callbackurl) وارد نشده باشد -3 توضیحات (description ) وارد نشده باشد و یا از حد مجاز 500 کارکتر بیشتر باشد -4 مبلغ پرداختی کمتر یا بیشتر از حد مجاز |
