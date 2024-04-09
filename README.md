@@ -5,6 +5,9 @@
 
 ## استفاده سریع
 
+```
+dotnet add package Zarinpal-Plus --version 1.0.0
+```
   > ساخت سازنده
 
 ```
