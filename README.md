@@ -5,18 +5,18 @@
 
 ## استفاده سریع
 
-```
+```csharp
 dotnet add package Zarinpal-Plus --version 1.0.0
 ```
   > ساخت سازنده
 
-```
+```csharp
 using Zarinpal_Plus.Services;
 
 var ZRequest = new ZarinpalServices();
 ```
   > ساخت درگاه (Request)
-```
+```csharp
 var Response = ZRequest.RequestAsync(new Zarinpal_Plus.Models.RequestModel()
 {
     MerchantId = Guid.Parse("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"),
@@ -33,11 +33,11 @@ var Response = ZRequest.RequestAsync(new Zarinpal_Plus.Models.RequestModel()
 }).Result;
 ```
   > ساخت لینک درگاه (Url)
-```
+```csharp
 var Url = ZRequest.GenerateUrl();
 ```
   > برسی جواب درگاه ساخته شده (Verify)
-```
+```csharp
 var VResponse = ZRequest.VerifyAsync(new Zarinpal_Plus.Models.VerifyRequestModel()
 {
     Amount = 25 * 1000,
@@ -51,7 +51,7 @@ var VResponse = ZRequest.VerifyAsync(new Zarinpal_Plus.Models.VerifyRequestModel
 ### مدل ها
   > در تابع ساخت درگاه (RequestAsync) $${\color{lightgreen}Request}$$
 
-```
+```csharp
     public class RequestModel
     {
         public UnitType? UnitType { get; set; }
@@ -80,7 +80,7 @@ var VResponse = ZRequest.VerifyAsync(new Zarinpal_Plus.Models.VerifyRequestModel
 ```
  > در تابع ساخت درگاه (RequestAsync) $${\color{lightgreen}Response}$$
 
-```
+```csharp
     public class ResponseModel
     {
         public DataModel? Data { get; set; }
@@ -98,7 +98,7 @@ var VResponse = ZRequest.VerifyAsync(new Zarinpal_Plus.Models.VerifyRequestModel
     }
 ```
    > در تابع برسی درخواست درگاه (VerifyAsync) $${\color{lightblue}Request}$$
-```
+```csharp
     public class VerifyRequestModel
     {
         public Guid MerchantId { get; set; }
@@ -112,7 +112,7 @@ var VResponse = ZRequest.VerifyAsync(new Zarinpal_Plus.Models.VerifyRequestModel
   > در تابع برسی درخواست درگاه (VerifyAsync) $${\color{lightblue}Response}$$
 
 
-```
+```csharp
     public class VerifyResponseModel
     {
         public VerifyDataModel? Data { get; set; }
@@ -134,7 +134,7 @@ var VResponse = ZRequest.VerifyAsync(new Zarinpal_Plus.Models.VerifyRequestModel
     }
 ```
   > مدل (StatusModel)
-```
+```csharp
     public class StatusModel
     {
         public int StatusCode { get; set; }
