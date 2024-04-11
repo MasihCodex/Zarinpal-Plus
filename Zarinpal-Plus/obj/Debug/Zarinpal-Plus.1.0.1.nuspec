@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Zarinpal-Plus</id>
+    <version>1.0.1</version>
+    <authors>Zarinpal-Plus</authors>
+    <icon>unnamed.png</icon>
+    <description>Document : https://github.com/MasihCodex/Zarinpal-Plus</description>
+    <repository type="git" url="https://github.com/MasihCodex/Zarinpal-Plus" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="Leaf.xNet" version="5.2.10" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/netstandard2.1/unnamed.ico" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Users\MasihCodex\Desktop\Zarinpal-Plus\Zarinpal-Plus\bin\Debug\netstandard2.1\Zarinpal-Plus.dll" target="lib\netstandard2.1\Zarinpal-Plus.dll" />
+    <file src="C:\Users\MasihCodex\Desktop\Zarinpal-Plus\Zarinpal-Plus\unnamed.ico" target="content\unnamed.ico" />
+    <file src="C:\Users\MasihCodex\Desktop\Zarinpal-Plus\Zarinpal-Plus\unnamed.ico" target="contentFiles\any\netstandard2.1\unnamed.ico" />
+    <file src="C:\Users\MasihCodex\Desktop\unnamed.png" target="\unnamed.png" />
+  </files>
+</package>
