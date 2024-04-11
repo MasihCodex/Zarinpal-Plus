@@ -6,7 +6,7 @@
 ## استفاده سریع
 
 ```csharp
-dotnet add package Zarinpal-Plus --version 1.0.0
+dotnet add package Zarinpal-Plus --version 1.0.1
 ```
   > ساخت سازنده
 
