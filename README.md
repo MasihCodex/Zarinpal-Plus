@@ -11,7 +11,7 @@ dotnet add package Zarinpal-Plus --version 1.0.0
   > ساخت سازنده
 
 ```csharp
-using Zarinpal_Plus.Services;
+using ZarinpalPlus.Services;
 
 var ZRequest = new ZarinpalServices();
 ```
